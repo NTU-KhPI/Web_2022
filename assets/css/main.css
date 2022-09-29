@@ -1,0 +1,308 @@
+*, ::after, ::before
+{
+	box-sizing: content-box;
+  scrollbar-width: thin;
+  scrollbar-color: blue grey;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: grey;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(to top, #FFCC00 50%, #0033CC 50%);
+}
+
+html
+{
+  width: 100%;
+  height: 100%;
+}
+
+body
+{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header
+{
+	display: flex;
+	flex-direction: row;
+	background-color: #0033CC;
+	color:white;
+  height: 14%;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.menu_logo
+{
+	display: flex;
+  width: 20%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo
+{
+	width: 40%;
+}
+
+.menu
+{
+	display: flex;
+  flex-direction: row;
+  width: 100%;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+img
+{
+  max-width: 100%;
+}
+
+nav
+{
+	display: flex;
+	flex-direction: row;
+	width: 60%;
+  align-items: center;
+}
+
+li
+{
+	list-style-type: none;
+  width: 20%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+main
+{
+	width: 100%;
+	margin: 2% 0;
+	display: flex;
+	justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+a
+{
+  text-align: center;
+  width: 100%;
+  height: 10%;
+  color: white;
+  outline: none;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover
+{
+  color: #FFCC00;
+}
+
+
+
+
+figure
+{
+  width: 30%;
+  margin: 0;
+  margin-left: 2%;
+}
+
+figcaption
+{
+  text-align: center;
+}
+
+section
+{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+button
+{
+  width: 50%;
+  height: 100%;
+  background: #0033CC;
+  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+}
+
+button:hover
+{
+  background: #FFCC00;
+  color: #000;
+  transition: 0.5s ease-in-out;
+}
+
+.wiki
+{
+  width: 60%;
+  margin-right: 2%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+aside
+{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h2
+{
+  text-align: center;
+  position: relative;
+}
+
+h3
+{
+  text-align: center;
+  position: relative;
+  margin-bottom: 4%;
+}
+
+h3::after
+{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background-color: #000;
+  right: 0;
+  margin: 0 auto;
+  display: block;
+}
+
+p
+{
+  font-family: 'Nunito', sans-serif;
+  text-transform: none;
+  text-align: justify;
+}
+
+.story
+{
+  position: relative;
+  display: flex;
+  content: "";
+  width: 20%;
+  border-radius: 8px;
+  background-color: #0033CC;
+  color: white;
+  border: 20px #0033CC solid;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.descr
+{
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to top, #0033CC 30%, transparent 100%);
+  position: absolute;
+  display: flex;
+  z-index: 999;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+ul
+{
+  width: 100%;
+  height: 50%;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.title_aside::after, .title_aside::before
+{
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 42%;
+  height: 10%;
+  background-color: #000;
+  margin: 0 auto;
+  display: block;
+}
+
+.title_aside::after
+{
+  right: 0;
+}
+
+.title_aside::before
+{
+  left: 0;
+}
+
+.images
+{
+  position: relative;
+  display: flex;
+  width: 20%;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  border: 20px #FFCC00 solid;
+  background-color: #FFCC00;
+  border-radius: 8px;
+}
+
+footer
+{
+  display: flex;
+	flex-direction: row;
+	color:white;
+  justify-content: center;
+  height: 30%;
+  width: 100%;
+  background-color: #CCCCCC;
+}
+
+.menu-footer
+{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
